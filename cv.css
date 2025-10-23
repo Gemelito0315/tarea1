@@ -1,0 +1,241 @@
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #e9ecef;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.3em;
+    color: #3498db;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+address {
+    font-style: normal;
+    color: #666;
+    line-height: 1.8;
+}
+
+address p {
+    margin: 0;
+    font-size: 1em;
+    color: #666;
+    font-weight: normal;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+    font-weight: 600;
+}
+
+/* Skills */
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#skills li {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+#skills li:hover {
+    transform: translateY(-2px);
+    background-color: #2980b9;
+}
+
+/* Educación y Experiencia */
+article {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+article h3 {
+    color: #2c3e50;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+article time {
+    color: #666;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+article ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+article li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+article strong {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Footer y enlaces */
+footer {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #e9ecef;
+    text-align: center;
+}
+
+#links h2 {
+    border-bottom: none;
+    margin-bottom: 15px;
+}
+
+#links nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#links a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 2px solid #3498db;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+#links a:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    #skills ul {
+        justify-content: center;
+    }
+
+    #links nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    article {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    #skills li {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+}
+
+/* Efectos de hover suaves */
+article {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+article:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Mejoras de accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus visible para accesibilidad */
+a:focus, button:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
